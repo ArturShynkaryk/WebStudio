@@ -1,0 +1,838 @@
+
+:root {
+    --brand-color: #212121;
+    --secound-color : #757575;
+    --blue-color :#2196F3;
+    --white-color: #FFFFFF;
+    --black : #000000;
+    --header-color: #ECECEC;
+    --gray:#2F303A;
+    --white:#F5F4FA;
+    --three :#EEEEEE;
+    --back-col : rgba(255, 255, 255, 0.6);
+    --shadow : rgba(0, 0, 0, 0.15);
+    --button-second : #1d84d9;
+    
+    
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em ;
+    background-color : var(--white-color);
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 400;
+    width: 1600px;
+    margin: 0 auto;     
+}
+
+
+
+.current {
+    font-weight: 500;
+    color: var(--blue-color);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    
+}
+
+.header {
+    color:var(--header-color);
+    border: 1px solid var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+}
+
+.header-ul {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+}
+
+ /* Навігація  */
+
+ .logo {
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--blue-color);
+    text-decoration: none;
+    margin-left: 216px;
+ }
+
+
+ .logo-end {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color:var(--black);
+    text-decoration: none;
+    margin-right: 95px;
+ }
+
+
+ .button-header {
+    font-weight: 500;
+    color: var(--brand-color);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    margin-left: 50px;
+
+ }
+
+
+ ul {
+    list-style-type: none;
+ }
+
+ .header-contact {
+    display: flex;
+    align-items: center;
+    margin-right: 210px;
+ }
+
+ .contact-svg {
+    margin-right: 10px;
+ }
+
+.contact-header {
+    font-weight: 500;
+    color: var(--secound-color);
+    text-decoration: none;
+
+}
+
+.evelope:hover, .evelope:focus,
+.contact-header:hover, .contact-header:focus, 
+.button-header:hover, .button-header:focus ,
+.current-port:hover, .current-port:focus,
+.footer-text:hover, .footer-text:focus,
+.footer-contact:hover, .footer-contact:focus  {
+    color: var(--blue-color);
+}
+
+
+.soc-li:hover, .soc-li:focus {
+
+    fill: #2196F3;
+}
+/* БЛОК З КНОПКОЮ */
+
+.border-box {
+    width: 1600px;
+    height: 600px;
+    background: url(/images/back-img.png);
+    text-align: center;
+    align-items: center;
+    position: relative;
+        
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(47, 48, 58, 0.40);
+    width: 100%;
+    height: 100%;
+}
+
+.title-box {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--white-color);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0px;
+    padding-top: 200px;
+    margin-bottom: 30px;
+
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--blue-color);
+    box-shadow: 0px 4px 4px var(--shadow);
+    border-radius: 4px;
+    border: 0px solid;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white-color);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.button:hover, .button:focus , .btn-footer:focus, .btn-footer:hover {
+    background-color: var(--button-second);
+    transition: 0.3s;
+}
+
+/* FEATURES */
+
+.about-block {
+    display: flex;
+    margin-top: 94px;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.group {
+    width: 270px;
+    height: 251px;
+    margin-right: 30px;
+    
+}
+
+.group-bg {
+    border-radius: 4px;
+    background: #F5F4FA;
+    height: 120px;
+    text-align: center;
+}
+
+.img-inside {
+    margin-top: 20px;
+}
+
+.features-bord {
+    color: var(--brand-color);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-top: 26px;
+}
+
+.features-text {
+    line-height: 1.71;
+    color:var(--secound-color);
+}
+
+.sec_title {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--brand-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+/* WORK BLOCK */
+
+
+.work {
+    margin-top: 90px;
+    text-align: center;
+    
+}
+
+.work-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin-bottom: 94px;
+
+}
+
+.list-style {
+    margin-left: 30px;
+}
+
+.overlay_3 {
+    width: 100%;
+    height: 20%;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+    backdrop-filter: blur(8px) brightness(80%);
+    cursor: pointer;
+    
+  }
+  
+  .image_wrapper:hover .overlay_3 {
+    transform: scale(1);
+  }
+
+
+  .image_wrapper {
+    position: relative;
+  }
+  
+.overlay-bl {
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+  } 
+
+  .over-text {
+    margin-top: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+
+/* MY TEAM  */
+
+.my-team {
+    background-color: var(--white);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 94px;
+}
+
+
+.team-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+    
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--brand-color);
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+
+.team-work {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--secound-color);
+    margin-top: 10px;
+
+}
+
+.team-form {
+    align-items: center;
+    width: 270px;
+    height: 428px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    margin-right: 30px;
+
+}
+
+.first-form {
+    margin-left: 30px;
+}
+
+.soc-row  {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.soc-img {
+    margin-right: 36px;
+    margin-top: 10px;
+}
+
+/* 
+PARTNERS */
+
+.partners {
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 90px;
+}
+
+
+.partner-blocks {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 28px;
+}
+
+
+.partner-block {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+
+.partner-img {
+    margin: 16px 32px;
+}
+
+
+/* FOOTER */
+
+.footer {
+   background-color: var(--gray) ; 
+   height: 252px;
+}
+
+.footer-block {
+    display: flex;
+    margin-left: 175px;
+    
+}
+
+.first-block {
+    margin-right: 85px;
+    margin-top: 60px;
+}
+
+.sec-block {
+    margin-top: 60px;
+}
+
+.logo-footer {
+    font-family: 'Raleway' sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white-color);
+}
+
+.footer-text {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+ .footer-contact {
+        font-style: normal;
+        line-height: 1.71;
+        color: var(--back-col);
+        text-decoration: none;
+        
+ }   
+
+.soc-position {
+    margin-top: 32px;
+    padding-left: 11px;
+}
+
+.soc-li {
+    margin-right: 34px;
+}
+
+.logo_footer {
+    margin-left: 40px;
+    
+}
+
+.addres-block {
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-cont {
+    margin-top: 5px;
+}
+
+.connect {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+
+.tree-block {
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+.btn-footer {
+    border-radius: 10px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    width: 205px;
+    height: 54px;
+    border: 0px solid;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    margin-left: 5px;
+}
+
+
+.form-field {
+    width: 342px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.48px;
+}
+
+
+
+ /* PORTFOLIO */
+
+ /* Button portfolio */
+
+ .button-portfolio {
+    padding: 6px 22px;
+    background-color: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0px solid;
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.48px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    margin-left: 10px;
+    
+
+
+        
+ }
+
+
+ .crn-btn {
+    padding: 6px 22px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    border: 0px solid;
+    width: 73px;
+    height: 38px;
+
+ }
+
+ .button-portfolio:hover,
+ .button-portfolio:focus {
+    color: var(--white-color);
+    background-color: var(--blue-color) ;
+ }
+
+/* Блок с портфолио */
+
+
+
+.current-port { 
+    font-weight: 500;
+    color: var(--blue-color);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    margin-left: 50px;
+}
+
+ .container-portf {
+    box-sizing: border-box;
+    width: 370px;
+    height: 404px;
+    background-color: var(--white-color);
+    border: 1px solid var(--three);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+ }
+
+.container-portf:hover, .container-portf:focus , .partner-block:hover,
+.partner-block:focus, .team-form:hover, .team-form:focus, .callback-btn:hover, .callback-btn:focus {
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+
+}
+
+.portfolio-block-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 65px;
+    
+}
+
+.img-potf {
+    width: 370px;
+    height: 294px;
+    left: 205px;
+    top: 268px;
+}
+
+
+.title-portf {
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color:var(--brand-color);
+    letter-spacing: 0.06em;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+
+.text-portf {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--secound-color);
+    margin-top: 3px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.port-href {
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-sec {
+    margin-top: 92px;
+}
+
+
+.portfolio-block {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.overlay_4 {
+    left: 0;
+    bottom: 100%;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    background: rgba(91, 106, 117, 0.9);
+
+
+  }
+  
+  .image_wrapper:hover .overlay_4 {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .port-img-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.54px;
+    width: 322px;
+    padding: 50px 16px;
+  }
+
+
+  /* CALL BACK FORM */
+
+
+  .overlay-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.callback-form {
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);    
+    width: 448px;
+    /* height: 581px; */
+    padding: 40px 40px;
+    margin-top: 90px;
+    
+}
+
+.callback-form h2 {
+color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.6px;
+width: 448px;
+margin-top: 0px;
+margin-bottom: 12px;
+}
+
+.callback-form input {
+    width: 448px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+
+} 
+
+.callback-form input::placeholder {
+    font-size: 18px;
+    color: #B2E3FF;
+
+}
+
+.callback-form input::first-child {
+    margin-right: 15px;
+}
+
+
+.callback-form .callback-btn{
+    border-radius: 4px;
+background: #188CE8;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+width: 200px;
+height: 50px;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+margin-top: 30px;
+margin-left: 125px;
+    
+}
+
+.booking-block-btn {
+    background: #ff9728;
+    border: none;
+    padding: 16px 40px;
+    gap: 10px;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    line-height: 25px;
+    display: block;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+.booking-block h2 {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+text-align: center;
+margin: 0 auto;
+padding-top: 60px;
+color: #F4F4F4;
+}
+
+.form-name {
+    color: #757575;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.12px;
+margin-bottom: 4px;
+margin-top: 10px;
+}
+
+.placeh {
+    width: 415px;
+height: 120px;
+flex-shrink: 0;
+border-radius: 4px;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.12px;
+padding: 12px 16px;
+
+}
+
